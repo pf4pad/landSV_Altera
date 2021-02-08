@@ -2,6 +2,55 @@ select {
   border: none;
   text-transform: uppercase;
   color: #717171;
+  outline: none;
+  appearance: none;
+}
+
+select option {
+  outline: none;
+  border: none;
+}
+
+.button-light {
+  padding: 20px 50px;
+  background: #fff;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid;
+  color: #005CAA;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.button-light:hover {
+  transition: 1s ease;
+  color: #fff;
+  background: #005CAA;
+}
+
+.button-dark {
+  padding: 20px 50px;
+  background: #005CAA;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.button-dark:hover {
+  transition: 1s ease;
+  border: 1px solid;
+  color: #005CAA;
+  background: #fff;
 }
 
 * {
@@ -21,6 +70,10 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 65px;
 }
 
 .header-menu {
@@ -62,30 +115,49 @@ body {
   color: #005CAA;
 }
 
-select {
-  border: none;
-  text-transform: uppercase;
-  color: #717171;
-  outline: none;
-  appearance: none;
-}
-
-select option {
-  outline: none;
-  border: none;
-}
-
-.button {
-  padding: 10px 20px;
-  background: #4592FF;
-  border-radius: 20px;
-  border: none;
+.hero-block {
   display: flex;
-  align-items: center;
-  font-family: var(--L);
-  font-style: normal;
-  font-weight: 900;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  flex-wrap: wrap;
+}
+
+.hero-advantage {
+  display: block;
+  padding-top: 60px;
   font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 20px;
-  color: #FFFFFF;
+  margin-bottom: 18px;
+}
+
+.hero-title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 23px;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 65px;
+}
+
+.features {
+  background-color: #005CAA;
+}
+
+.features-title {
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 80px;
 }

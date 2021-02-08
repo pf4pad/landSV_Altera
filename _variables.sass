@@ -6,6 +6,53 @@ $bg-color-light: #f9f9f9
 $bg-color-dark: #005CAA
 
 select
+
   border: none
   text-transform: uppercase
   color: $text-color-holder
+  outline: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+select option
+  outline: none
+  border: none
+.button-light
+  padding: 20px 50px
+  background: $text-color-light
+  border-radius: 4px
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 16px
+  border: 1px solid
+  color: $active-color
+  cursor: pointer
+  transition: 1s ease
+.button-light:hover
+
+  transition: 1s ease
+  color: $text-color-light
+  background: $bg-color-dark
+.button-light:active
+
+.button-dark
+  padding: 20px 50px
+  background: $bg-color-dark
+  border-radius: 4px
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 16px
+  border: none
+  border-radius: 4px
+  color: $text-color-light
+  cursor: pointer
+  transition: 1s ease
+.button-dark:hover
+
+  transition: 1s ease
+  border: 1px solid
+  color: $bg-color-dark
+  background: $text-color-light
+.button-dark:active
