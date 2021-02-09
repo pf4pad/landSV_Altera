@@ -29,30 +29,33 @@ section
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05)
   background: $bg-color-light
   border-radius: 10px
-
 .imgBox
   position: absolute
-  top: 10px
-  left: 10px
-  background: rgba(255, 255, 255, 0.1)
-  backdrop: blur(20px)
-  height: calc( 100% - 20px)
-  width: calc( 100% - 20px)
-  z-index: 1
-  display: flex
-  justify-content: center
-  align-items: center
-  overflow: hidden
-  border-radius: 20px
-  border: 1px solid rgba(255, 255, 255, 0.2)
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1)
-  transition: 0.5s ease-in-out
-.card:hover .imgBox
   height: 150px
   width: 150px
   left: 50%
   top: calc(50%-75px)
+  background: rgba(255, 255, 255, 0.1)
   transform: translate(-50%,-50%)
+  z-index: 1
+  display: flex
+  justify-content: center
+  align-items: center
+
+  border-radius: 20px
+  border: 1px solid rgba(255, 255, 255, 0.2)
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1)
+  transition: 1s ease-in-out
+.imgBox:hover
+  position: absolute
+  top: 150px
+
+  backdrop: blur(20px)
+  height: calc( 100% - 20px)
+  width: calc( 100% - 20px)
+
+  transition: 1s ease-in-out
+
 .imgBox img
   max-width: 100px
   filter: invert(0.1)
